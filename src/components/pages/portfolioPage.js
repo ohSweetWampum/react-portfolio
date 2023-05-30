@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import ProjectTile from "./ProjectTile";
 import projects from "./projects";
 
-const portfolioPage = () => {
+const PortfolioPage = () => {
   const [numProjectsToShow, setNumProjectsToShow] = useState(6);
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     if (
       window.innerHeight + document.documentElement.scrollTop !==
       document.documentElement.offsetHeight
     )
       return;
     setNumProjectsToShow(numProjectsToShow + 3);
-  };
+  }, [numProjectsToShow]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [handleScroll]);
 
   return (
     <div id="portfolio" className="main-page">
@@ -48,4 +48,4 @@ const portfolioPage = () => {
   );
 };
 
-export default portfolioPage;
+export default PortfolioPage;
