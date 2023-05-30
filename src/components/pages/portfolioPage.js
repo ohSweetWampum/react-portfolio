@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ProjectTile from "./ProjectTile";
 import projects from "./projects";
 
-const HomePage = () => {
+const portfolioPage = () => {
   const [numProjectsToShow, setNumProjectsToShow] = useState(6);
 
   const handleScroll = () => {
@@ -48,4 +48,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default portfolioPage;
