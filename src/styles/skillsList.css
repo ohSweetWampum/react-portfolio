@@ -1,0 +1,9 @@
+.skills-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    margin-bottom: 10px;
+  }
+  
