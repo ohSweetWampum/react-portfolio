@@ -1,28 +1,32 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: #fbf2e9; /* Light beige */
 }
 
 .nav-container {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  background-color: #f8f9fa;
+  width: 100%;
+  background-color: #ffd5a1; /* Warm light orange */
 }
 
 .nav-link {
-  margin: 0 10px;
   text-decoration: none;
+  color: #6b4226; /* Dark brown */
   font-size: 18px;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #495057;
+  color: #e85d04; /* Strong orange on hover */
 }
 
-.nav-link.active {
-  color: #007bff;
+.nav-link-active {
+  color: #d00000; /* Strong red for active link */
+  border-bottom: 3px solid #d00000; /* Underline for active link */
 }
+

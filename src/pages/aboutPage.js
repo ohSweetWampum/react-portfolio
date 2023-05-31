@@ -13,7 +13,7 @@ function About() {
         className="headshot"
         alt="Matt Gibson"
         src={myPicture}
-        sx={{ width: 200, height: 200 }}
+        sx={{ width: 400, height: 400 }}
       />
 
       <Typography variant="h4" component="div" className="name">

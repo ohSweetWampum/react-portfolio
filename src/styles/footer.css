@@ -11,5 +11,17 @@
   
   .footer a {
     color: #333;
-    margin: 0 10px;
+    margin: 0 35px;
   }
+  .links-container a {
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .links-container a:hover {
+    color: #ff5722;
+  }
+  
+  .footer a:hover svg {
+    color: red;
+}

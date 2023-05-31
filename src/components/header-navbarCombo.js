@@ -4,36 +4,43 @@ import { NavLink } from "react-router-dom";
 
 function Navigation() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <NavLink to="/" activeStyle={{ color: "red" }}>
-            About Me
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/portfolio" activeStyle={{ color: "red" }}>
-            Portfolio
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact" activeStyle={{ color: "red" }}>
-            Contact
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/resume" activeStyle={{ color: "red" }}>
-            Resume
-          </NavLink>
-        </li>
-      </ul>
+    <nav className="nav-container">
+      <NavLink
+        to="/"
+        exact
+        activeClassName="nav-link-active"
+        className="nav-link"
+      >
+        About Me
+      </NavLink>
+      <NavLink
+        to="/portfolio"
+        activeClassName="nav-link-active"
+        className="nav-link"
+      >
+        Portfolio
+      </NavLink>
+      <NavLink
+        to="/contact"
+        activeClassName="nav-link-active"
+        className="nav-link"
+      >
+        Contact
+      </NavLink>
+      <NavLink
+        to="/resume"
+        activeClassName="nav-link-active"
+        className="nav-link"
+      >
+        Resume
+      </NavLink>
     </nav>
   );
 }
 
 function Header() {
   return (
-    <header>
+    <header className="header">
       <h1>Welcome to Matt Gibson's Portfolio!</h1>
       <Navigation />
     </header>
