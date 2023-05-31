@@ -1,10 +1,10 @@
 import React from "react";
-import myPicture from "picture path";
+import myPicture from "../../../images/biopic2.jpeg";
 import { Avatar, Typography, Box, Link } from "@mui/material";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import "./About.css"; // Import a CSS file for this component
+import "./about.css";
 
 function About() {
   return (

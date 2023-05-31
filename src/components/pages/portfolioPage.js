@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
-import ProjectTile from "./ProjectTile";
-import projects from "./projects";
+import ProjectTile from "./projectTile";
+import projects from "../../seeds/projectsArray";
 
 const PortfolioPage = () => {
   const [numProjectsToShow, setNumProjectsToShow] = useState(6);

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import emailValidator from "./emailValidator";
+import emailValidator from "../../../utils/emailValidator";
 
 function Contact() {
   const [name, setName] = useState("");

@@ -2,11 +2,11 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HeaderNavbarCombo from "./components/header-navbarCombo";
 import Footer from "./components/footer";
-import AboutPage from "./pages/aboutPage";
-import PortfolioPage from "./pages/portfolioPage";
-import ContactPage from "./pages/contactPage";
-import ResumePage from "./pages/resumePage";
-import SingleProjectPage from "./pages/singleProjectPage";
+import AboutPage from "./components/pages/aboutPage";
+import PortfolioPage from "./components/pages/portfolioPage";
+import ContactPage from "./components/pages/contactPage";
+import ResumePage from "./components/pages/resumePage";
+import SingleProjectPage from "./components/pages/singleProjectPage";
 import "./styles/global.css";
 
 function App() {
