@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.9309b912.css",
+    "main.js": "/react-portfolio/static/js/main.13c3832e.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/BigSkyLodges.png": "/react-portfolio/static/media/BigSkyLodges.0abd1c89794b19eee905.png",
+    "static/media/biopic2.jpeg": "/react-portfolio/static/media/biopic2.a47fbddb5092ae4f40f2.jpeg",
+    "static/media/WeatherDashboard.png": "/react-portfolio/static/media/WeatherDashboard.3c4580a908cb5b6714ba.png",
+    "static/media/SavvyChef.png": "/react-portfolio/static/media/SavvyChef.d6677da11e110072e529.png",
+    "static/media/E-CommerceBackEnd.png": "/react-portfolio/static/media/E-CommerceBackEnd.77a1df998a8203dc9237.png",
+    "static/media/TownSquare.png": "/react-portfolio/static/media/TownSquare.8c13485ad74c4f63686a.png",
+    "static/media/Matthew Gibson Resume 03_28_2022-2.pdf": "/react-portfolio/static/media/Matthew Gibson Resume 03_28_2022-2.f759a95a5016ea83011f.pdf",
+    "static/media/PasswordGenerator.png": "/react-portfolio/static/media/PasswordGenerator.02186aa1605136fdb329.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.9309b912.css.map": "/react-portfolio/static/css/main.9309b912.css.map",
+    "main.13c3832e.js.map": "/react-portfolio/static/js/main.13c3832e.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9309b912.css",
+    "static/js/main.13c3832e.js"
+  ]
+}
