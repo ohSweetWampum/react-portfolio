@@ -9,7 +9,7 @@ import {
 
 function Project({ project }) {
   return (
-    <Card>
+    <Card style={{ maxWidth: "100%" }}>
       <CardMedia
         component="img"
         height="140"

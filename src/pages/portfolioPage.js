@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Project from "../components/project";
 import projects from "../seeds/projects";
+import { Grid } from "@mui/material";
 
 const PortfolioPage = () => {
   const [numProjectsToShow, setNumProjectsToShow] = useState(6);
@@ -40,9 +41,13 @@ const PortfolioPage = () => {
         </div>
       </section>
       <section id="projects">
-        {projects.slice(0, numProjectsToShow).map((project) => (
-          <Project key={project.id} project={project} />
-        ))}
+        <Grid container spacing={2}>
+          {projects.slice(0, numProjectsToShow).map((project) => (
+            <Grid item xs={12} sm={6} key={project.id}>
+              <Project project={project} />
+            </Grid>
+          ))}
+        </Grid>
       </section>
     </div>
   );

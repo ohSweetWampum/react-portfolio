@@ -1,11 +1,26 @@
 .resume-section {
-    padding: 20px;
-  }
-  
-  .resume {
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-  }
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
 
-  
+.resume-section:hover {
+  transform: scale(1.01);
+}
+
+.resume {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.skill {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.skill:hover {
+  color: #4caf50; 
+  transform: scale(1.1);
+}
