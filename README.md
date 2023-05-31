@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My portfolio built using React
 
-## Available Scripts
+## Website
 
-In the project directory, you can run:
+[Click here to visit the app](https://ohsweetwampum.github.io/react-portfolio/)
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This is my React portfolio, It utilizes React.js for navigation and interactive UI, it features key sections: About Me, Portfolio, Contact, and Resume. Its modular design demonstrates use cases for reusable React components and modern hooks.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
 
-### `npm test`
+- [Website](#website)
+- [Description](#description)
+- [Technology](#technology)
+- [Usage](#usage)
+- [Image](#image)
+- [Code](#code)
+- [Learning](#learning)
+- [Author](#author)
+- [Credits](#credits)
+- [Contributing](#Contributing)
+- [Questions](#questions)
+- [License](#license)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technology
 
-### `npm run build`
+- Express.js
+  [Learn about Express.js](https://expressjs.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js
+  [Learn about Node.js](https://nodejs.org/en)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React
+  [Learn about React](https://react.dev/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- JavaScript
+  [Learn about JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-### `npm run eject`
+- CSS
+  [Learn about CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This portfolio offers an insight into my skills, projects, and experiences as a web developer. You can learn about my journey, view my projects, download my resume, or even contact me directly from within the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Image
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Alt Text](src/images/Screenshot.png)
 
-## Learn More
+## Code
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I wanted to highlight this code snippet because it showcases a React hooks. useState is used to track name, email, message, and errors. useEffect validates the user inputs, running whenever name, email, or message changes. The emailValidator utility function is used to validate the email format. Errors are stored in a state object and are updated dynamically based on the user input validity.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```JavaScript
 
-### Code Splitting
+import React, { useState, useEffect } from "react";
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+import emailValidator from "../utils/emailValidator";
 
-### Analyzing the Bundle Size
+function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [errors, setErrors] = useState({ name: "", email: "", message: "" });
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  useEffect(() => {
+    if (!name)
+      setErrors((errors) => ({ ...errors, name: "Name is required." }));
+    if (!email)
+      setErrors((errors) => ({ ...errors, email: "Email is required." }));
+    else if (!emailValidator(email))
+      setErrors((errors) => ({ ...errors, email: "Invalid email address." }));
+    if (!message)
+      setErrors((errors) => ({ ...errors, message: "Message is required." }));
+  }, [name, email, message]);
 
-### Making a Progressive Web App
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Learning
 
-### Advanced Configuration
+- React.js
+- State Management
+- Component Design
+- Form Validation in React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Author
 
-### Deployment
+Matthew Gibson
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [Portfolio](https://github.com/ohSweetWampum)
+- [LinkedIn](https://www.linkedin.com/in/matthew-gibson-6b9b12237/)
+- [Github](https://github.com/ohSweetWampum)
 
-### `npm run build` fails to minify
+## Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Thanks to all the instructors and the in-class examples/activities they provided were especially helpful for this application.
+
+## Contributing
+
+If you would like to contribute, please contact me at [mtgibson888@gmail.com](mailto:mtgibson888@gmail.com)
+
+## Questions
+
+If you have any questions about this application, please contact me at [mtgibson888@gmail.com](mailto:mtgibson888@gmail.com) or check out my [GitHub Profile](https://github.com/ohSweetWampum)
+
+## License
+
+This application is covered by the MIT license
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
+
+```
+
+```
