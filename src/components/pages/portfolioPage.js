@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import ProjectTile from "./projectTile";
+import project from "./project";
 import projects from "../../seeds/projectsArray";
 
 const PortfolioPage = () => {
@@ -41,7 +41,7 @@ const PortfolioPage = () => {
       </section>
       <section id="projects">
         {projects.slice(0, numProjectsToShow).map((project) => (
-          <ProjectTile key={project.id} project={project} />
+          <project key={project.id} project={project} />
         ))}
       </section>
     </div>

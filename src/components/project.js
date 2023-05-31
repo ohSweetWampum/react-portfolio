@@ -1,4 +1,4 @@
-// ProjectTile.js
+// project.js
 
 import React from "react";
 import {
@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom";
 
-function ProjectTile({ project }) {
+function project({ project }) {
   return (
     <Card>
       <CardMedia
@@ -36,4 +36,4 @@ function ProjectTile({ project }) {
   );
 }
 
-export default ProjectTile;
+export default project;
