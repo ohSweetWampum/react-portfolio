@@ -8,7 +8,6 @@ import {
   Typography,
   Button,
 } from "@mui/material";
-import { Link } from "react-router-dom";
 
 function project({ project }) {
   return (
@@ -28,9 +27,9 @@ function project({ project }) {
         </Typography>
       </CardContent>
       <Button variant="contained" color="primary">
-        <Link to={project.githubLink} target="_blank" rel="noopener noreferrer">
+        <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
           View on GitHub
-        </Link>
+        </a>
       </Button>
     </Card>
   );
