@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import projects from "./projects";
+import projects from "../seeds/projects";
 
 const SingleProjectPage = () => {
   const { id } = useParams();

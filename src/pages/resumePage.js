@@ -1,6 +1,6 @@
 import React from "react";
 import { Document, Page } from "react-pdf";
-import resumePDF from "./images/Matthew Gibson Resume 03_28_2022-2.pdf";
+import resumePDF from "../images/Matthew Gibson Resume 03_28_2022-2.pdf";
 
 const Resume = () => {
   const skills = ["JavaScript", "React", "Node.js", "Express.js"]; // add more skilss

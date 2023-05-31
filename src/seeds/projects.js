@@ -1,3 +1,10 @@
+import BigSkyLodges from "../images/BigSkyLodges.png";
+import ECommerceBackEnd from "../images/E-Commerce-Back-End.png";
+import PasswordGenerator from "../images/PasswordGenerator.png";
+import SavvyChef from "../images/SavvyChef.png";
+import TowneSquare from "../images/TowneSquare.png";
+import WeatherDashboard from "../images/WeatherDashboard.png";
+
 const projects = [
   {
     id: 1,
@@ -5,7 +12,7 @@ const projects = [
     description:
       "A password generator that can generate random passwords based on criteria that the user has selected",
     technologies: ["JavaScript", "HTML", "CSS"],
-    image: "path to image here",
+    image: PasswordGenerator,
     repo: "https://github.com/ohSweetWampum/password-generator",
     deployedLink: "https://ohsweetwampum.github.io/password-generator/",
   },
@@ -23,7 +30,7 @@ const projects = [
       "OpenWeather API",
       "Day.js",
     ],
-    image: "path to image here",
+    image: WeatherDashboard,
     repo: "https://github.com/ohSweetWampum/weather-dashboard",
     deployedLink: "https://ohsweetwampum.github.io/weather-dashboard/",
   },
@@ -40,7 +47,7 @@ const projects = [
       "Node.js",
       "JavaScript",
     ],
-    image: "path to image here",
+    image: ECommerceBackEnd,
     repo: "https://github.com/ohSweetWampum/E-Commerce-Back-End",
     deployedLink:
       "https://drive.google.com/file/d/1Fvk_3knhg5utdPcn7OCdCTom6Aj0RylA/view",
@@ -70,7 +77,7 @@ const projects = [
       "Connect-Session-sequalize",
       "Bootstrap",
     ],
-    image: "path to image here",
+    image: BigSkyLodges,
     repo: "https://github.com/ohSweetWampum/Big-Sky-Lodges",
     deployedLink: "https://big-sky-lodges.herokuapp.com/",
   },
@@ -89,7 +96,7 @@ const projects = [
       "Spoonacular API",
       "CocktailDB API",
     ],
-    image: "path to image here",
+    image: SavvyChef,
     repo: "https://github.com/DidrikLindberg/savvy-chef",
     deployedLink: "https://didriklindberg.github.io/savvy-chef/",
   },
@@ -111,7 +118,7 @@ const projects = [
       "Insomnia",
       "Day.js",
     ],
-    image: "path to image here",
+    image: TowneSquare,
     repo: " https://github.com/ohSweetWampum/TownSquare",
     deployedLink:
       " https://drive.google.com/file/d/1Ext6K_odyTyfKsVvN2OWercw-vLhbpZu/view",

@@ -1,4 +1,4 @@
-// project.js
+import "../styles/project.css";
 
 import React from "react";
 import {
