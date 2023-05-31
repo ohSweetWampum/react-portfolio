@@ -14,12 +14,12 @@ const Resume = () => {
       }}
       id="resume"
     >
-      <Document
+      {/* <Document
         file={process.env.PUBLIC_URL + "/resume.pdf"}
         onLoadSuccess={() => console.log("PDF loaded successfully")}
       >
         <Page pageNumber={1} width={window.innerWidth * 0.8} />
-      </Document>
+    </Document>*/}
       <div style={{ margin: "20px auto" }}>
         <a href={process.env.PUBLIC_URL + "/resume.pdf"} download>
           Download Resume
