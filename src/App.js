@@ -6,7 +6,7 @@ import AboutPage from "./pages/aboutPage";
 import PortfolioPage from "./pages/portfolioPage";
 import ContactPage from "./pages/contactPage";
 import ResumePage from "./pages/resumePage";
-import SingleProjectPage from "./pages/singleProjectPage";
+
 import "./styles/global.css";
 
 function App() {
@@ -16,7 +16,6 @@ function App() {
       <Routes>
         <Route exact path="/" element={<AboutPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
-        <Route path="/portfolio/:id" element={<SingleProjectPage />} />
         <Route path="/resume" element={<ResumePage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
