@@ -1,9 +1,8 @@
 import React from "react";
 import { Document, Page } from "react-pdf";
-import resumePDF from "../images/resume.pdf";
 
 const Resume = () => {
-  const skills = ["JavaScript", "React", "Node.js", "Express.js"]; // add more skilss
+  const skills = ["JavaScript", "React", "Node.js", "Express.js"]; // add more skills
 
   return (
     <div
@@ -16,17 +15,21 @@ const Resume = () => {
       id="resume"
     >
       <Document
-        file={resumePDF}
+        file={process.env.PUBLIC_URL + "/resume.pdf"}
         onLoadSuccess={() => console.log("PDF loaded successfully")}
       >
         <Page pageNumber={1} width={window.innerWidth * 0.8} />
       </Document>
       <div style={{ margin: "20px auto" }}>
-        <a href={resumePDF} download="resume.pdf">
+        <a href={process.env.PUBLIC_URL + "/resume.pdf"} download>
           Download Resume
         </a>
         <br />
-        <a href={resumePDF} target="_blank" rel="noopener noreferrer">
+        <a
+          href={process.env.PUBLIC_URL + "/resume.pdf"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Open Resume in New Tab
         </a>
         <br />
