@@ -1,8 +1,8 @@
 import BigSkyLodges from "../images/BigSkyLodges.png";
-import ECommerceBackEnd from "../images/E-Commerce-Back-End.png";
+import ECommerceBackEnd from "../images/E-CommerceBackEnd.png";
 import PasswordGenerator from "../images/PasswordGenerator.png";
 import SavvyChef from "../images/SavvyChef.png";
-import TowneSquare from "../images/TowneSquare.png";
+import TowneSquare from "../images/TownSquare.png";
 import WeatherDashboard from "../images/WeatherDashboard.png";
 
 const projects = [

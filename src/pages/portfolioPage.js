@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import project from "../components/project";
+import Project from "../components/project";
 import projects from "../seeds/projects";
 
 const PortfolioPage = () => {
@@ -41,7 +41,7 @@ const PortfolioPage = () => {
       </section>
       <section id="projects">
         {projects.slice(0, numProjectsToShow).map((project) => (
-          <project key={project.id} project={project} />
+          <Project key={project.id} project={project} />
         ))}
       </section>
     </div>
