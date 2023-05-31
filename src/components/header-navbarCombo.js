@@ -6,22 +6,22 @@ function Navigation() {
     <nav>
       <ul>
         <li>
-          <NavLink to="/aboutPage" activeStyle={{ color: "red" }}>
+          <NavLink to="/" activeStyle={{ color: "red" }}>
             About Me
           </NavLink>
         </li>
         <li>
-          <NavLink to="/homePage" activeStyle={{ color: "red" }}>
+          <NavLink to="/portfolio" activeStyle={{ color: "red" }}>
             Portfolio
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contactPage" activeStyle={{ color: "red" }}>
+          <NavLink to="/contact" activeStyle={{ color: "red" }}>
             Contact
           </NavLink>
         </li>
         <li>
-          <NavLink to="/resumePage" activeStyle={{ color: "red" }}>
+          <NavLink to="/resume" activeStyle={{ color: "red" }}>
             Resume
           </NavLink>
         </li>
