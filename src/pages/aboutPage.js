@@ -21,12 +21,18 @@ function About() {
       </Typography>
 
       <Typography className="bio" variant="body1">
-        bio here
+        Hello! My name is Matt Gibson and welcome to my portfolio page! My
+        background is in analytical chemistry and biology, but I made the
+        decesion to jump to a new carrer in the computer technology industry. I
+        graduated from University of Wisconsin-Madison with a BS degree in
+        Biology. Since graduating I have worked in Florida for an algae farm and
+        in Wisonsin as an analytical chemist. As I accumulate projects I will
+        post them here.
       </Typography>
 
       <div className="links-container">
         <Typography className="email" variant="body1">
-          mtgibson888@gmail.com
+          <a href="mailto:mtgibson888@gmail.com">mtgibson888@gmail.com</a>
         </Typography>
         <Box>
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
