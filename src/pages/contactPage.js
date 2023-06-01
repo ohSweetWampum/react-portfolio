@@ -1,35 +1,39 @@
-import React, { useState, useEffect } from "react";
-
+import React, { useState } from "react";
 import emailValidator from "../utils/emailValidator";
+import "../styles/contact.css";
 
-function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [errors, setErrors] = useState({ name: "", email: "", message: "" });
 
-  useEffect(() => {
-    if (!name)
-      setErrors((errors) => ({ ...errors, name: "Name is required." }));
-    if (!email)
-      setErrors((errors) => ({ ...errors, email: "Email is required." }));
-    else if (!emailValidator(email))
-      setErrors((errors) => ({ ...errors, email: "Invalid email address." }));
-    if (!message)
-      setErrors((errors) => ({ ...errors, message: "Message is required." }));
-  }, [name, email, message]);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (!errors.name && !errors.email && !errors.message) {
-      console.log(
-        "Form is valid. Name: ",
-        name,
-        " Email: ",
-        email,
-        " Message: ",
-        message
-      );
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!formData.name)
+      setErrors((errors) => ({ ...errors, name: "Name is required." }));
+    if (!formData.email)
+      setErrors((errors) => ({ ...errors, email: "Email is required." }));
+    else if (!emailValidator(formData.email))
+      setErrors((errors) => ({ ...errors, email: "Invalid email address." }));
+    if (!formData.message)
+      setErrors((errors) => ({ ...errors, message: "Message is required." }));
+  };
+
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    if (!value) {
+      setErrors((errors) => ({ ...errors, [name]: `${name} is required.` }));
+    } else {
+      setErrors((errors) => ({ ...errors, [name]: "" }));
     }
   };
 
@@ -44,7 +48,8 @@ function Contact() {
             id="name"
             name="name"
             required
-            onChange={(e) => setName(e.target.value)}
+            onChange={handleChange}
+            onBlur={handleBlur}
           />
           {errors.name && <div>{errors.name}</div>}
         </label>
@@ -55,7 +60,8 @@ function Contact() {
             id="email"
             name="email"
             required
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={handleChange}
+            onBlur={handleBlur}
           />
           {errors.email && <div>{errors.email}</div>}
         </label>
@@ -65,7 +71,8 @@ function Contact() {
             id="message"
             name="message"
             required
-            onChange={(e) => setMessage(e.target.value)}
+            onChange={handleChange}
+            onBlur={handleBlur}
           />
           {errors.message && <div>{errors.message}</div>}
         </label>
@@ -74,5 +81,3 @@ function Contact() {
     </div>
   );
 }
-
-export default Contact;
