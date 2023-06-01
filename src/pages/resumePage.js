@@ -68,7 +68,25 @@ import { motion } from "framer-motion";
 import { Grid, List, ListItem, Card, Button } from "@mui/material";
 import "../styles/resume.css";
 
-const skills = ["JavaScript", "React", "Node.js", "Express.js"]; // add more skills
+const skills = [
+  "GraphQL",
+  "Node.js",
+  "Sequelize",
+  "jQuery",
+  "Visual Studio",
+  "React",
+  "Jest",
+  "MongoDB",
+  "Express.js",
+  "Handlebars",
+  "Bootstrap",
+  "JavaScript",
+  "AJAX",
+  "Restfull APIs",
+  "MySQL",
+  "Heroku",
+  "Insomnia",
+];
 
 const SkillsList = () => (
   <Grid container spacing={2}>
