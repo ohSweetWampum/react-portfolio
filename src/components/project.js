@@ -1,3 +1,4 @@
+// Import required components from Material UI
 import React from "react";
 import {
   Card,
@@ -5,51 +6,68 @@ import {
   CardMedia,
   Typography,
   Button,
+  Box,
 } from "@mui/material";
+// Importing the icons to be used in the buttons
+import GitHubIcon from "@mui/icons-material/GitHub";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 
-// This function is a component that represents a single project.
-function Project({ project }) {
-  // Returning a Card component from Material UI.
+// Create a function component that can accept a ref
+// This component represents a single project
+const Project = React.forwardRef(({ project }, ref) => {
   return (
-    <Card style={{ maxWidth: "100%" }}>
-      {/* Displaying the image of the project */}
+    // Card component to display each project details
+    <Card ref={ref} sx={{ maxWidth: "100%", boxShadow: 3 }}>
+      {/* Component to display the image of the project */}
       <CardMedia
         component="img"
         height="140"
         image={project.image}
         alt={project.name}
       />
-
-      {/* Showing the project name and description */}
+      {/* Component to display the content of the project */}
       <CardContent>
+        {/* Name of the project */}
         <Typography gutterBottom variant="h5" component="div">
           {project.name}
         </Typography>
+        {/* Description of the project */}
         <Typography variant="body2" color="text.secondary">
           {project.description}
         </Typography>
       </CardContent>
-
-      {/* Button for the Github link */}
-      <Button variant="contained" color="primary">
-        <a href={project.repo} target="_blank" rel="noopener noreferrer">
-          View on GitHub
-        </a>
-      </Button>
-
-      {/* Button for the deployed link */}
-      <Button variant="contained" color="secondary">
-        <a
+      {/* Component to display the buttons */}
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-around",
+          paddingBottom: "10px",
+        }}
+      >
+        <Button
+          variant="contained"
+          color="primary"
+          startIcon={<GitHubIcon />}
+          href={project.repo}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          startIcon={<VisibilityIcon />}
           href={project.deployedLink}
           target="_blank"
           rel="noopener noreferrer"
         >
-          View Deployed App
-        </a>
-      </Button>
+          View App
+        </Button>
+      </Box>
     </Card>
   );
-}
+});
 
-// Exporting Project component to be used in other parts of the app
+// Exporting the Project component for use in other files
 export default Project;

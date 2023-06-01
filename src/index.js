@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import "typeface-roboto";
 
 // Creating a root for the React application using the root element in the HTML
 const root = ReactDOM.createRoot(document.getElementById("root"));

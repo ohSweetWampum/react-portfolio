@@ -1,33 +1,38 @@
+/* .project-tile {
+  max-width: 345px;
+  margin: 20px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.12), 0 7px 10px -5px rgba(0,0,0,0.15);
+}
 
+.project-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 
-.project-tile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #dee2e6;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  }
-  
-  .project-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  .project-info {
-    text-align: center;
-  }
-  
-  .project-link {
-    text-decoration: none;
-    color: #007bff;
-  }
-  
-  .project-link:hover {
-    color: #0056b3;
-  }
-  
+.project-info {
+  text-align: center;
+  color: #757575;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #3f51b5;
+}
+
+.project-link:hover {
+  color: #1a237e;
+}
+
+.CardContent {
+  padding: 15px;
+}
+
+.Button {
+  margin: 10px;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+  color: white;
+} */
