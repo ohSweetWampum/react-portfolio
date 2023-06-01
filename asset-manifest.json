@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.ca11d292.css",
-    "main.js": "/react-portfolio/static/js/main.a5983c06.js",
+    "main.css": "/react-portfolio/static/css/main.9548fe03.css",
+    "main.js": "/react-portfolio/static/js/main.c93707d4.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/BigSkyLodges.png": "/react-portfolio/static/media/BigSkyLodges.0abd1c89794b19eee905.png",
     "static/media/biopic2.jpeg": "/react-portfolio/static/media/biopic2.a47fbddb5092ae4f40f2.jpeg",
@@ -13,12 +13,12 @@
     "static/media/resume.pdf": "/react-portfolio/static/media/resume.f759a95a5016ea83011f.pdf",
     "static/media/PasswordGenerator.png": "/react-portfolio/static/media/PasswordGenerator.02186aa1605136fdb329.png",
     "index.html": "/react-portfolio/index.html",
-    "main.ca11d292.css.map": "/react-portfolio/static/css/main.ca11d292.css.map",
-    "main.a5983c06.js.map": "/react-portfolio/static/js/main.a5983c06.js.map",
+    "main.9548fe03.css.map": "/react-portfolio/static/css/main.9548fe03.css.map",
+    "main.c93707d4.js.map": "/react-portfolio/static/js/main.c93707d4.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca11d292.css",
-    "static/js/main.a5983c06.js"
+    "static/css/main.9548fe03.css",
+    "static/js/main.c93707d4.js"
   ]
 }
