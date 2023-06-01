@@ -1,66 +1,3 @@
-// import React, { useState } from "react";
-// import { Document, Page } from "react-pdf";
-
-// const Resume = () => {
-//   const [numPages, setNumPages] = useState(null);
-//   const [pageNumber, setPageNumber] = useState(1); // Setting initial page to 1
-
-//   const skills = ["JavaScript", "React", "Node.js", "Express.js"]; // add more skills
-
-//   function onDocumentLoadSuccess({ numPages }) {
-//     setNumPages(numPages);
-//   }
-
-//   return (
-//     <div
-//       style={{
-//         position: "relative",
-//         width: "80%",
-//         margin: "0 auto",
-//         textAlign: "center",
-//       }}
-//       id="resume"
-//     >
-//       <Document
-//         file={process.env.PUBLIC_URL + "/resume.pdf"}
-//         onLoadSuccess={onDocumentLoadSuccess}
-//         style={{ height: "75vh", width: "100%", margin: "0 auto" }}
-//       >
-//         <Page pageNumber={pageNumber} />
-//       </Document>
-//       <div style={{ margin: "20px auto" }}>
-//         <a href={process.env.PUBLIC_URL + "/resume.pdf"} download>
-//           Download Resume
-//         </a>
-//         <br />
-//         <a
-//           href={process.env.PUBLIC_URL + "/resume.pdf"}
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Open Resume in New Tab
-//         </a>
-//         <br />
-//         <button onClick={() => window.print()}>Print Resume</button>
-//       </div>
-//       <div
-//         style={{
-//           width: "100%",
-//           backgroundColor: "#f0f0f0",
-//           padding: "10px",
-//         }}
-//       >
-//         <h3>Skills</h3>
-//         <ul>
-//           {skills.map((skill) => (
-//             <li key={skill}>{skill}</li>
-//           ))}
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// };
-
 import React from "react";
 import resumePDF from "../images/resume.pdf";
 import resumeImage from "../images/resumeImage.png";
@@ -68,6 +5,7 @@ import { motion } from "framer-motion";
 import { Grid, List, ListItem, Card, Button } from "@mui/material";
 import "../styles/resume.css";
 
+// List of skills
 const skills = [
   "GraphQL",
   "Node.js",
@@ -88,10 +26,12 @@ const skills = [
   "Insomnia",
 ];
 
+// Component to render the skills list in two columns
 const SkillsList = () => (
   <Grid container spacing={2}>
     <Grid item xs={12} sm={6}>
       <List>
+        {/*Mapping the first half of skills to list items*/}
         {skills.slice(0, Math.ceil(skills.length / 2)).map((skill) => (
           <ListItem className="skill" key={skill}>
             {skill}
@@ -101,6 +41,7 @@ const SkillsList = () => (
     </Grid>
     <Grid item xs={12} sm={6}>
       <List>
+        {/*Mapping the second half of skills to list items*/}
         {skills.slice(Math.ceil(skills.length / 2)).map((skill) => (
           <ListItem className="skill" key={skill}>
             {skill}
@@ -111,23 +52,27 @@ const SkillsList = () => (
   </Grid>
 );
 
+// Main Resume component
 const Resume = () => (
   <Grid container spacing={3} style={{ marginBottom: "50px" }}>
     <Grid item xs={12} sm={6}>
       <Card className="resume-section">
         <h2>Skills</h2>
+        {/*Skills list component*/}
         <SkillsList />
       </Card>
     </Grid>
     <Grid item xs={12} sm={6}>
       <Card className="resume-section">
         <h2>Resume</h2>
+        {/*Link to the resume PDF*/}
         <a
           href={resumePDF}
           target="_blank"
           rel="noopener noreferrer"
           style={{ display: "inline-block" }}
         >
+          p
           <motion.img
             className="resume"
             src={resumeImage}
@@ -137,7 +82,9 @@ const Resume = () => (
           />
         </a>
         <div className="button-group">
+          {/*Button to print the resume*/}
           <Button onClick={() => window.print()}>Print Resume</Button>
+          {/*Button to download the resume*/}
           <Button href={resumePDF} download>
             Download Resume
           </Button>

@@ -8,6 +8,7 @@ import "../styles/about.css";
 
 function About() {
   return (
+    //main container
     <div className="about-container">
       <Avatar
         className="headshot"
@@ -31,35 +32,37 @@ function About() {
       </Typography>
 
       <div className="links-container">
-  <Box>
-    <Typography className="email" variant="body1">
-      <a href="mailto:mtgibson888@gmail.com">mtgibson888@gmail.com</a>
-    </Typography>
-  </Box>
-  <Box>
-    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-      <a
-        href="https://www.linkedin.com/in/matthew-gibson-6b9b12237/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faLinkedin} size="2x" />
-      </a>
-    </motion.div>
-  </Box>
-  <Box>
-    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-      <a
-        href="https://github.com/ohSweetWampum?page=1&tab=repositories"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faGithub} size="2x" />
-      </a>
-    </motion.div>
-  </Box>
-</div>
-
+        <Box>
+          {/* email*/}
+          <Typography className="email" variant="body1">
+            <a href="mailto:mtgibson888@gmail.com">mtgibson888@gmail.com</a>
+          </Typography>
+        </Box>
+        <Box>
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            {/* Link to LinkedIn profile */}
+            <a
+              href="https://www.linkedin.com/in/matthew-gibson-6b9b12237/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
+          </motion.div>
+        </Box>
+        <Box>
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            {/* Link to GitHub profile */}
+            <a
+              href="https://github.com/ohSweetWampum?page=1&tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x" />
+            </a>
+          </motion.div>
+        </Box>
+      </div>
     </div>
   );
 }

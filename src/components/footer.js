@@ -9,9 +9,11 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
+// This function returns the footer of the page which includes links to the author's social media profiles
 function Footer() {
   return (
     <footer className="footer">
+      {/* Link to LinkedIn profile */}
       <Box>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <a
@@ -24,6 +26,7 @@ function Footer() {
         </motion.div>
       </Box>
 
+      {/* Link to Medium profile */}
       <Box>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <a
@@ -36,6 +39,7 @@ function Footer() {
         </motion.div>
       </Box>
 
+      {/* Link to GitHub profile */}
       <Box>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <a

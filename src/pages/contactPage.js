@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import emailValidator from "../utils/emailValidator";
 import "../styles/contact.css";
 
+// This function defines the Contact form component
 export default function Contact() {
+  // Initialize form data and form error states
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -10,14 +12,17 @@ export default function Contact() {
   });
   const [errors, setErrors] = useState({ name: "", email: "", message: "" });
 
+  // Handle input changes and update the state accordingly
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Perform validation checks for each field and update error state if validation fails
     if (!formData.name)
       setErrors((errors) => ({ ...errors, name: "Name is required." }));
     if (!formData.email)
@@ -28,6 +33,7 @@ export default function Contact() {
       setErrors((errors) => ({ ...errors, message: "Message is required." }));
   };
 
+  // Handle input blur events for field validation
   const handleBlur = (e) => {
     const { name, value } = e.target;
     if (!value) {
@@ -37,6 +43,7 @@ export default function Contact() {
     }
   };
 
+  // Return the JSX for the Contact form
   return (
     <div className="Contact">
       <h1>Contact Me</h1>
