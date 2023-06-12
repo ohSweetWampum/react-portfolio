@@ -1,6 +1,6 @@
 import BigSkyLodges from "../images/BigSkyLodges.png";
 import ECommerceBackEnd from "../images/E-CommerceBackEnd.png";
-import PasswordGenerator from "../images/PasswordGenerator.png";
+import BudgetBetter from "../images/BudgetBetter.png";
 import SavvyChef from "../images/SavvyChef.png";
 import TowneSquare from "../images/TownSquare.png";
 import WeatherDashboard from "../images/WeatherDashboard.png";
@@ -8,13 +8,26 @@ import WeatherDashboard from "../images/WeatherDashboard.png";
 const projects = [
   {
     id: 1,
-    name: "Random Password Generator",
+    name: "Budget Better",
     description:
-      "A password generator that can generate random passwords based on criteria that the user has selected",
-    technologies: ["JavaScript", "HTML", "CSS"],
-    image: PasswordGenerator,
-    repo: "https://github.com/ohSweetWampum/password-generator",
-    deployedLink: "https://ohsweetwampum.github.io/password-generator/",
+      "Budget Better is a web application that helps users manage their personal finances effectively. With Budget Better, you can track your income and expenses, set budget goals, and gain insights into your spending habits. Take control of your finances and make smarter financial decisions with Budget Better.",
+    technologies: [
+      "JavaScript",
+      "React",
+      "node.js",
+      "express.js",
+      "MongoDB",
+      "Mongoose",
+      "Heroku",
+      "Chart.js",
+      "GraphQL",
+      "JSON Web Tokwns",
+      "Tailwind",
+      "OpenAI API",
+    ],
+    image: BudgetBetter,
+    repo: "https://github.com/sheaschwenn/budget-better",
+    deployedLink: "https://budgetbetter.herokuapp.com/",
   },
   {
     id: 2,
